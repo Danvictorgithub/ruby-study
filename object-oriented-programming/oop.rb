@@ -218,3 +218,17 @@
 # child = Child.new
 
 # child.send(:say_hi)
+
+class Test
+  def Hello
+    puts "Hello"
+  end
+end
+
+class Test2 < Test
+  # def Hello
+  # end
+end
+
+testClass = Test2.new
+testClass.Hello
